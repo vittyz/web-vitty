@@ -1,0 +1,17 @@
+version: '2'
+services:
+  web-vitty:
+    image: web-vitty
+    container_name: web-vitty
+    ports:
+      - 7789:80
+    volumes:
+      - /usr/home/woravitp/html:/usr/share/nginx/html
+    environment:
+      - SET_CONTAINER_TIMEZONE=true
+      - CONTAINER_TIMEZONE=Asia/Bangkok
+      - TZ=ICT-7
+networks:
+    default:
+       external:
+           name: vitty
