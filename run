@@ -1,0 +1,1 @@
+docker run -ti -v /root/web-vitty/html:/usr/share/nginx/html web bash
