@@ -4,9 +4,11 @@ services:
     image: web-vitty
     container_name: web-vitty
     ports:
-      - 7789:80
+      - 8002:80
     volumes:
-      - /usr/home/woravitp/html:/usr/share/nginx/html
+      - /usr/home/spd/woravitp/wwwroot:/usr/share/nginx/html
+      - /usr/home/WEBADM/occmnpwl/logs/occmnpweb/api:/logs/web:ro
+      - /usr/home/spd/woravitp/logs/adm/api:/logs/adm:ro
     environment:
       - SET_CONTAINER_TIMEZONE=true
       - CONTAINER_TIMEZONE=Asia/Bangkok
@@ -14,4 +16,4 @@ services:
 networks:
     default:
        external:
-           name: vitty
+           name: general 

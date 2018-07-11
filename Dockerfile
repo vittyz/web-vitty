@@ -1,6 +1,8 @@
 FROM alpine
 
 MAINTAINER Vitty
+ENV http_proxy http://10.1.1.10:8080
+ENV https_proxy http://10.1.1.10:8080
 
 RUN mkdir -p /run/nginx
 RUN mkdir -p /usr/share/nginx/html
