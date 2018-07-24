@@ -29,7 +29,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 RUN sed -i 's/;daemonize = yes/daemonize = no/g' /etc/php7/php-fpm.conf
 
 EXPOSE 80
-WORKDIR /wwwroot/html/
+WORKDIR /usr/share/nginx
  
 CMD [ "supervisord"]
 

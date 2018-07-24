@@ -4,7 +4,7 @@ services:
     image: web-vitty
     container_name: web-vitty
     ports:
-      - 8002:80
+      - 8001:80
     volumes:
       - /usr/home/spd/woravitp/wwwroot:/usr/share/nginx/html
       - /usr/home/WEBADM/occmnpwl/logs/occmnpweb/api:/logs/web:ro
